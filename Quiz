@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        #quiz-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .question {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .option {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .option:hover {
+            background-color: #e0e0e0;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div id="quiz-container">
+    <h1>Fun Quiz</h1>
+
+    <!-- Question 1 -->
+    <div class="question" id="question1">
+        What is the capital of France?
+    </div>
+    <div class="options" id="options1">
+        <div class="option" onclick="checkAnswer(1, 'Paris')">Paris</div>
+        <div class="option" onclick="checkAnswer(1, 'Berlin')">Berlin</div>
+        <div class="option" onclick="checkAnswer(1, 'London')">London</div>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="question" id="question2">
+        Which planet is known as the Red Planet?
+    </div>
+    <div class="options" id="options2">
+        <div class="option" onclick="checkAnswer(2, 'Mars')">Mars</div>
+        <div class="option" onclick="checkAnswer(2, 'Venus')">Venus</div>
+        <div class="option" onclick="checkAnswer(2, 'Jupiter')">Jupiter</div>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="question" id="question3">
+        What is the largest mammal in the world?
+    </div>
+    <div class="options" id="options3">
+        <div class="option" onclick="checkAnswer(3, 'Blue Whale')">Blue Whale</div>
+        <div class="option" onclick="checkAnswer(3, 'Elephant')">Elephant</div>
+        <div class="option" onclick="checkAnswer(3, 'Giraffe')">Giraffe</div>
+    </div>
+
+    <!-- Question 4 -->
+    <div class="question" id="question4">
+        In which year did the Titanic sink?
+    </div>
+    <div class="options" id="options4">
+        <div class="option" onclick="checkAnswer(4, '1912')">1912</div>
+        <div class="option" onclick="checkAnswer(4, '1920')">1920</div>
+        <div class="option" onclick="checkAnswer(4, '1905')">1905</div>
+    </div>
+
+    <!-- Add more questions as needed -->
+
+    <div id="result"></div>
+</div>
+
+<script>
+    let score = 0;
+
+    function checkAnswer(questionNumber, selectedOption) {
+        const correctAnswers = {
+            1: 'Paris',
+            2: 'Mars',
+            3: 'Blue Whale',
+            4: '1912'
+            // Add more questions and correct answers as needed
+        };
+
+        const correctAnswer = correctAnswers[questionNumber];
+
+        if (selectedOption === correctAnswer) {
+            score++;
+        }
+
+        const resultElement = document.getElementById('result');
+        resultElement.textContent = `Your score: ${score} out of ${questionNumber}`;
+
+        // Disable options after selecting one
+        const optionsElement = document.getElementById(`options${questionNumber}`);
+        const options = optionsElement.getElementsByClassName('option');
+        for (let i = 0; i < options.length; i++) {
+            options[i].style.pointerEvents = 'none';
+        }
+    }
+</script>
+
+</body>
+</html>
