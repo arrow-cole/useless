@@ -1,9 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<head>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h3 {
+            text-align: center;
+        }
+    </style>
+</head>
+
 <body>
-
-<p> for the people seeing this you are gay</p>
-
+    <h3>For the people seeing this, you are gay.</h3>
 </body>
+
 </html>
