@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Game Opener</title>
+  <script>
+    function openRandomWebsite() {
+      var websites = [
+        'https://games.acole.xyz/pages/rows/first-row/smash-the-walls',
+        'https://games.acole.xyz/pages/rows/first-row/doge',
+        'https://games.acole.xyz/pages/rows/first-row/mine-sweeper',
+        'https://games.acole.xyz/pages/rows/first-row/that-one-finger',
+        'https://games.acole.xyz/pages/rows/second-row/check-box-race',
+        'https://games.acole.xyz/pages/rows/second-row/move-now-think-later',
+        'https://games.acole.xyz/pages/rows/second-row/cat-bounce',
+        'https://games.acole.xyz/pages/rows/second-row/man-in-the-dark',
+        'https://games.acole.xyz/pages/rows/third-row/koalas-to-the-max',
+        'https://games.acole.xyz/pages/rows/third-row/hacker-typer',
+        'https://games.acole.xyz/pages/rows/third-row/pointer',
+        'https://games.acole.xyz/pages/rows/third-row/yesnoif',
+        'https://games.acole.xyz/pages/rows/fourth-row/move-block-around',
+        'https://games.acole.xyz/pages/rows/fourth-row/snowman',
+        'https://games.acole.xyz/pages/rows/fourth-row/boring',
+        'https://games.acole.xyz/pages/rows/fourth-row/cross-division',
+        'https://games.acole.xyz/pages/rows/fifth-row/dog-be-spinning',
+        'https://games.acole.xyz/pages/rows/fifth-row/double-pressure',
+        'https://games.acole.xyz/pages/rows/fifth-row/infinity',
+        'https://games.acole.xyz/pages/rows/fifth-row/pug-in-a-rug',
+        'https://games.acole.xyz/pages/rows/sixth-row/cursor-effect',
+        'https://games.acole.xyz/pages/rows/sixth-row/box-maker',
+        'https://games.acole.xyz/pages/rows/sixth-row/maze',
+        'https://games.acole.xyz/pages/rows/sixth-row/i-has-a-bucket',
+        
+        // Add more websites as needed
+      ];
+
+      // Shuffle the array to get a random order
+      websites.sort(function() {
+        return 0.5 - Math.random();
+      });
+
+      // Open the websites in random order
+      for (var i = 0; i < websites.length; i++) {
+        window.open(websites[i]);
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>Random Game Opener</h1>
+  <button onclick="openRandomWebsite()">Open Games</button>
+</body>
+</html>
