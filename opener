@@ -31,6 +31,14 @@
         'https://games.acole.xyz/pages/rows/sixth-row/box-maker',
         'https://games.acole.xyz/pages/rows/sixth-row/maze',
         'https://games.acole.xyz/pages/rows/sixth-row/i-has-a-bucket',
+        'https://games.acole.xyz/pages/rows/seventh-row/never-ending-clicker',
+        'https://games.acole.xyz/pages/rows/seventh-row/guess-the-number',
+        'https://games.acole.xyz/pages/rows/seventh-row/rps',
+        'https://games.acole.xyz/pages/rows/seventh-row/ping-pong',
+        'https://games.acole.xyz/pages/rows/eighth-row/baby-1',
+        'https://games.acole.xyz/pages/rows/eighth-row/baby-2',
+        'https://games.acole.xyz/pages/rows/eighth-row/baby-3',
+        'https://games.acole.xyz/pages/rows/eighth-row/baby-4',
         
         // Add more websites as needed
       ];
