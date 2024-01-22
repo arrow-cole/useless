@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic 8-Ball</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+
+        #question-input {
+            margin-bottom: 10px;
+        }
+
+        #response {
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Magic 8-Ball</h1>
+
+    <label for="question-input">Ask the Magic 8-Ball a question:</label>
+    <input type="text" id="question-input" placeholder="Type your question here">
+
+    <button onclick="askMagic8Ball()">Ask</button>
+
+    <div id="response"></div>
+
+    <script>
+        function askMagic8Ball() {
+            var responses = [
+
+             "Sure, if that's what you want to believe.", "Yes, because clearly, you have it all figured out.", "Sure thing, genius. Your question was truly groundbreaking.", "Sure I guess.", "Yes, but don't act surprised; even a broken clock is right twice a day.", "Sure, because that's exactly what the universe revolves around – your desires.", "Sure, because my psychic abilities were totally itching to predict your mundane positive outcome.", "Yes, shockingly enough, the universe decided to align in your favor this time.", "Congratulations, it's a 'yes'! I hope this momentous occasion doesn't go to your head.", "Yes, but you might want to reconsider your life choices if you needed confirmation from a talking pool ball.", "Yes! Congrats! I bet you haven't heard that in a while.", "I couldn't care less. Come back later (or never)", "I have better things to do than to answer that.", "I wasn't paying attention. Try again (or dont).", "Question stupid. Try again.", "Meh, I don't feel like answering right now.", "You should know the answer to that, you're better than this.", "No me importa.", "Don't waste my time, come up with something actually important next time ok?", "If you don't know I'm not telling you.", "To whom it may concern: this question is lame", "I dunno.", "I know I am, but what are you?", "You don't need to know that.", "Nah.", "Oh, the disappointment! It's a no! Whatever will you do?", "No, but I'm sure you'll find a way to blame something for your failure.", "Outlook not so good, just like your question.", "Don't count on it, unless you enjoy disappointment.", "Bet on it and lose for all I care", "In your dreams.", "No, but don't worry, I'm sure you're used to hearing that.", "Picture this: A universe where your question gets a 'yes.' Now, snap back to reality. No.", "If getting rejected was a currency you'd be rich.", "Keep dreaming kid.", "Did you hear that? That's right! Not happening.", "I am pleased to announce that upon consulting the fates, it has been decided that HECK NO!", "You're funny. Oh, that wasn't a joke? No. Not happening.", "Not with that attitude.",
+            ];
+
+            var question = document.getElementById('question-input').value;
+            var responseElement = document.getElementById('response');
+
+            if (question.trim() === '') {
+                responseElement.textContent = 'Please enter a question.';
+            } else {
+                var randomResponse = responses[Math.floor(Math.random() * responses.length)];
+                responseElement.textContent = 'Magic 8-Ball says: ' + randomResponse;
+            }
+        }
+    </script>
+</body>
+</html>
