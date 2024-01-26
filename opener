@@ -67,7 +67,9 @@
         'https://games.acole.xyz/pages/rows/fifteenth/noice',
         'https://games.acole.xyz/pages/rows/fifteenth/emoji',
         'https://games.acole.xyz/pages/rows/fifteenth/falling-falling',
-        'https://games.acole.xyz/404',
+        'https://games.acole.xyz/pages/rows/sixteenth/wordle',
+        'https://games.acole.xyz/pages/rows/sixteenth/4060',
+        'https://games.acole.xyz/pages/rows/sixteenth/solitare',
         // Add more websites as needed
       ];
 
@@ -86,6 +88,6 @@
 <body>
   <h1>Random Game Opener</h1>
   <button onclick="openRandomWebsite()">Open Games</button>
-  <p> Last updated 1/16/24 @ 2:00 PM </p>
+  <p> Last updated 1/26/24 @ 2:30 PM </p>
 </body>
 </html>
