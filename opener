@@ -73,8 +73,8 @@
         'https://games.acole.xyz/pages/rows/sixteenth/calculator-the-game',
         'https://games.acole.xyz/pages/rows/seventeenth/pico-park',
         'https://games.acole.xyz/pages/rows/seventeenth/black-jack',
-        '',
-        '',
+        'https://games.acole.xyz/pages/rows/seventeenth/tetris',
+        'https://games.acole.xyz/pages/rows/seventeenth/dominoes',
         // Add more websites as needed
         <!--Use this for adding games (        '',) -->
       ];
