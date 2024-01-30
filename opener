@@ -71,7 +71,12 @@
         'https://games.acole.xyz/pages/rows/sixteenth/4060',
         'https://games.acole.xyz/pages/rows/sixteenth/solitare',
         'https://games.acole.xyz/pages/rows/sixteenth/calculator-the-game',
+        'https://games.acole.xyz/pages/rows/seventeenth/pico-park',
+        'https://games.acole.xyz/pages/rows/seventeenth/black-jack',
+        '',
+        '',
         // Add more websites as needed
+        <!--Use this for adding games (        '',) -->
       ];
 
       // Shuffle the array to get a random order
