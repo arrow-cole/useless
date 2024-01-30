@@ -94,6 +94,6 @@
 <body>
   <h1>Random Game Opener</h1>
   <button onclick="openRandomWebsite()">Open Games</button>
-  <p> Last updated 1/30/24 @ 2:30 PM </p>
+  <p> Last updated 1/30/24 @ 12:00 PM </p>
 </body>
 </html>
