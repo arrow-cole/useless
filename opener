@@ -70,6 +70,7 @@
         'https://games.acole.xyz/pages/rows/sixteenth/wordle',
         'https://games.acole.xyz/pages/rows/sixteenth/4060',
         'https://games.acole.xyz/pages/rows/sixteenth/solitare',
+        'https://games.acole.xyz/pages/rows/sixteenth/calculator-the-game',
         // Add more websites as needed
       ];
 
@@ -88,6 +89,6 @@
 <body>
   <h1>Random Game Opener</h1>
   <button onclick="openRandomWebsite()">Open Games</button>
-  <p> Last updated 1/26/24 @ 2:30 PM </p>
+  <p> Last updated 1/30/24 @ 2:30 PM </p>
 </body>
 </html>
